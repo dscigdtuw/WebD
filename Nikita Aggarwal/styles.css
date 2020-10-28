@@ -76,10 +76,6 @@ li:hover span {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.fa-pencil-alt {
-  float: right;
-}
-
 .completed {
   color: gray;
   text-decoration: line-through;
