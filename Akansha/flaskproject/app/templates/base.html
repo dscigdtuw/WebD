@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/final.css') }}">
+    <title>Project</title>
+    </head>
+    <body>
+        <navbar>
+            <a href="{{url_for('index')}}">Home</a>
+            <a href="{{url_for('project')}}">Project</a>
+            <a href="{{url_for('skills')}}">Skills</a>
+            <a href="{{url_for('Experience')}}">Experience</a>
+        </navbar>
+        <h1>Welcome!</h1>
+        {% block content %} {% endblock %}
+    </body>
+    </html>
