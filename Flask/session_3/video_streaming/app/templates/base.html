@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/together1.css') }}">
+        {% if title %}
+        <title>{{title}}</title>
+        {% else %}
+        <title>Hey!</title>
+        {% endif %}
+    </head>
+
+    <body>
+        <h1>Hello!</h1>
+        <nav>
+            <a href="{{url_for('index')}}">Home</a>
+            <a href = "{{url_for('video_feed')}}">Effect1</a>
+            <a href = "{{url_for('video1')}}">Effect2</a>
+        </nav>
+        {% block content %} 
+        {% endblock %}
+    </body>
+
+</html>
